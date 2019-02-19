@@ -1,0 +1,26 @@
+<li 
+  style="list-style: none"
+  [ngClass]="loveIts > 0 ? 'list-group-item-success' : 'list-group-item-danger'"
+  >
+  <div class="post-header">
+    <h2>{{ title }}</h2>
+    <p class="date">{{ created_at | date: short }}</p>
+  </div>
+  <p>{{ content }}</p>
+  <div class="row-button">
+      <button 
+        type="button" 
+        class="btn btn-success"
+        (click)="onLoveIt()"
+      >
+        Love it !
+      </button>
+      <button 
+        type="button" 
+        class="btn btn-danger"
+        (click)="onDontLoveIt()"
+      >
+        Don't love it !
+      </button>
+  </div>
+</li>

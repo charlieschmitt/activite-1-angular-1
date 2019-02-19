@@ -1,0 +1,23 @@
+.post-header {
+    display: flex;
+}
+
+.date {
+    display: flex;
+    flex:1; 
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.list-group-item-success, .list-group-item-danger {
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+.btn-success {
+    margin-right: .5rem;
+}
+
+.btn-danger {
+    margin-left: .5rem;
+}
